@@ -38,7 +38,7 @@ gulp.task('pages', () => {
   gulp.src(constants.pages)
 
     // forward only changed files or if we've altered templates
-    .pipe(changed(constants.tempDir, {
+    .pipe(changed(destination, {
       extension: '.html',
       deps: [constants.templates]
     }))
