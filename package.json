@@ -1,0 +1,56 @@
+{
+  "name": "wherati.github.io",
+  "version": "0.1.0",
+  "description": "Personal page and blog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wherati/wherati.github.io.git"
+  },
+  "keywords": [
+    "blog",
+    "personal",
+    "page",
+    "github",
+    "pages",
+    "static",
+    "site",
+    "generator"
+  ],
+  "author": "Walid Hosseini <caasjj@gmail.com> (http://walidhosseini.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wherati/wherati.github.io/issues"
+  },
+  "homepage": "https://github.com/wherati/wherati.github.io#readme",
+  "devDependencies": {
+    "async": "^1.5.0",
+    "browser-sync": "^2.10.1",
+    "chalk": "^1.1.1",
+    "del": "^2.2.0",
+    "event-stream": "^3.3.2",
+    "glob": "^6.0.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-front-matter": "^1.3.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-markdown": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "jade": "^1.11.0",
+    "jstransformer-supermarked": "^0.1.0",
+    "lazypipe": "^1.0.1",
+    "lodash": "^3.10.1",
+    "markdown-it": "^5.0.2",
+    "pygmentize-bundled": "^2.3.0",
+    "require-dir": "^0.3.0",
+    "supermarked": "^2.0.0",
+    "through2-map": "^2.0.0",
+    "vinyl": "^1.1.0",
+    "yargs": "^3.31.0"
+  }
+}

@@ -1,0 +1,28 @@
+- var styles = ['main']
+- var scripts = ['main']
+// TODO: implement styling to default pages
+doctype html
+html
+
+    head
+        block stylesheets
+        if (styles && styles.length)
+            each style in styles
+                link(rel="stylesheet" type="text/css" href='/styles/' + style +'.css')
+        block title
+        title Default title for #{name}
+
+    body
+        block nav
+        include /src/templates/includes/nav
+
+        block content
+            h1.title-class Replace this content
+
+        block footer
+        include /src/templates/includes/footer
+
+        block javascript
+        if (scripts && scripts.length)
+            each source in scripts
+                script(type="application/javascript" src='/scripts/' + source + '.js')

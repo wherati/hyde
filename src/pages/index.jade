@@ -1,0 +1,13 @@
+extends /src/templates/layouts/default-layout
+
+block stylesheets
+    - var styles = ['main']
+
+block content
+    h2 This is the default main page
+    p In the template, we have explicitly provided a style and script override.
+      | see src/pages/index.jade
+
+block javascript
+    - var scripts = ['main']
+

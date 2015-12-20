@@ -1,0 +1,16 @@
+extends /src/templates/layouts/default-layout
+
+block content
+    p Listing of my ALL blogs:
+    ul
+        each post in posts.length ? posts : [{url: '#', title: 'No Posts'}]
+            li
+                a(href=post.url)
+                    if post.title
+                        span #{post.title}
+                    else
+                        span Untitled Post
+                if post.summary
+                    p #{post.summary}
+                else
+                    p No summary available for this post

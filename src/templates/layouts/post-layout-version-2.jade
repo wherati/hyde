@@ -1,0 +1,23 @@
+- var styles = ['main']
+
+doctype html
+html
+
+    head
+        block stylesheets
+        if(styles && styles.length)
+            each style in styles
+                link(rel="stylesheet" type="text/css" href='/styles/' + style +'.css')
+        block title
+        title POST Title #{name}
+
+    body
+        h1 &lth1&gt tag from layout version 2
+
+        block content
+            | !{postPartial}
+
+        block javascript
+        if (scripts && scripts.length)
+            each source in scripts
+                script(type="application/javascript" src='/scripts/' + source + '.js')
